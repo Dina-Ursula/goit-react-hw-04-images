@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import Searchbar from '../Searchbar/Searchbar';
 import Modal from '../Modal/Modal';
