@@ -15,7 +15,7 @@ const ImageGalleryItem = ({ image, showModal }) => {
 
   return (
     <ImageGalleryItemStyled
-      key={image.id}
+      id={image.id}
       data-url={image.largeImageURL}
       onClick={clickEvent}
     >
