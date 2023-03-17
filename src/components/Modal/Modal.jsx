@@ -28,5 +28,6 @@ function Modal({ image, closeModal }) {
 export default Modal;
 
 Modal.propTypes = {
+  image: PropTypes.string.isRequired,
   closeModal: PropTypes.func.isRequired,
 };
