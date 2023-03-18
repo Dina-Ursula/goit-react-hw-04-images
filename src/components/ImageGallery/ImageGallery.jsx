@@ -7,8 +7,8 @@ import { ImageGalleryStyled } from './ImageGallery.styled';
 const ImageGallery = ({ images, showModal }) => {
   return (
     <ImageGalleryStyled>
-      {images.map(image => (
-        <ImageGalleryItem image={image} showModal={showModal} />
+      {images.map((image, index) => (
+        <ImageGalleryItem key={index} image={image} showModal={showModal} />
       ))}
     </ImageGalleryStyled>
   );

@@ -57,23 +57,6 @@ function App() {
     searchImage();
   }, [search, page]);
 
-  // searchImage = async () => {
-  //   const resp = await fetch(
-  //     `https://pixabay.com/api/?q=${this.state.search}&page=${this.state.page}&key=${API_KEY}&image_type=photo&orientation=horizontal&per_page=12`
-  //   );
-  //   if (!resp.ok) {
-  //     throw new Error(`fetch failed`);
-  //   }
-  //   const body = await resp.json();
-  //   return body.hits.map(el => {
-  //     return {
-  //       id: el.id,
-  //       webformatURL: el.webformatURL,
-  //       largeImageURL: el.largeImageURL,
-  //     };
-  //   });
-  // };
-
   const showModal = imageId => {
     setModal(imageId);
   };
